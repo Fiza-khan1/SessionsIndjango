@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Getting....</h2>
+    {{name}}
+    {% for key in keys%}
+    {{key}}
+    {%endfor%}
+    <br>
+    {%for item in items%}
+    {{item}}
+    {%endfor%}
+    {{age}}
+    <hr>
+    <!-- Session method -->
+    <p>Age of cookie:{{request.session.get_session_cookie_age}}</p>
+    <p>Expiry date:{{request.session.get_expiry_age}}</p>
+    <p>Expiry Date:{{request.session.get_expiry_date}}</p>
+    <p>expires at browser close:{{request.session.get_expire_at_browser_close}}</p>
+    
+</body>
+</html>
